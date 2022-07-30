@@ -1,5 +1,6 @@
 import './App.css';
 import {CakeContainer} from './components/CakeContainer';
+import { UserContainer } from './components/UserContainer';
 import { IceCreamContainer } from './components/IceCreamContainer';
 import ItemContainer from './components/ItemContainer';
 import {Provider} from 'react-redux';
@@ -8,6 +9,7 @@ function App() {
   return (
     <Provider store={store}>
     <div className="App">
+      <UserContainer />
       <ItemContainer />
       <ItemContainer cake="cake"/>
       <CakeContainer />
