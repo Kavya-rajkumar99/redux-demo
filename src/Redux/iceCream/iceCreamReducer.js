@@ -8,7 +8,7 @@ export const iceCreamReducer = (state=initialState,action) => {
     switch(action.type){
         case BUY_ICECREAM : return{
             ...state,
-            numOfIceCreams : state.numOfIceCreams > 0 ? state.numOfIceCreams - 1 : state.numOfIceCreams
+            numOfIceCreams : state.numOfIceCreams > 0 ? state.numOfIceCreams - action.payload : state.numOfIceCreams
         }
         default : return state;
     }
